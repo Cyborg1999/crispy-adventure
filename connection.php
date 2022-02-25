@@ -21,7 +21,7 @@ class DBConnector{
 
     public function closeDatabase(){
 
-        mysqli_close($conn);
+        mysqli_close($this->conn);
     }
 
 }
