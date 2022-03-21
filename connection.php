@@ -7,7 +7,7 @@ const DB_NAME = 'dieng';
 
 
 class DBConnector{
-    public $conn;
+    private $conn;
 
     function __construct()
     {
@@ -21,7 +21,7 @@ class DBConnector{
 
     public function closeDatabase(){
 
-        mysqli_close($conn);
+        mysqli_close($this->conn);
     }
 
 }
